@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>{% if is_home %}{{ site.author }}{% elif is_post %}{{ post.title }}{% elif is_link %}{{ link.title }}{% elif is_page %}{{ page.title }}{% endif %} | {{ site.name }}</title>
     <meta name="author" content="{{ site.author }}" />
+    <link rel="shortcut icon" href="https://dl.dropboxusercontent.com/u/64730059/veganama/favicon.ico">
     <link href="{{ site.atom_url }}" rel="alternate" title="{{ site.name }} Feed" type="application/atom+xml" />
     <link href="{{ static('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" />
     <link href="{{ static('bootstrap/css/bootstrap-responsive.min.css') }}" rel="stylesheet" />
@@ -69,7 +70,7 @@
                 <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
                 <aside class="author">      
                     <span class="dots">････････････････････</span>                
-                    <img src="{{ account.email|gravatar(50) }}" />
+                    <img src="{{ site.avatar }}" />
                     <span class="dots">････････････････････</span>                
                 </aside>
                 <div class="post-body">
@@ -107,7 +108,7 @@
                 <h2><a href="{{ link.permalink }}">{{ link.title }}</a></h2>
                 <aside class="author">      
                     <span class="dots">････････････････････</span>                
-                    <img src="{{ account.email|gravatar(50) }}" />
+                    <img src="{{ site.avatar }}" />
                     <span class="dots">････････････････････</span>                
                 </aside>
                 <div class="post-body">
@@ -145,7 +146,7 @@
                 <h2><a href="{{ page.permalink }}">{{ page.title }}</a></h2>
                 <aside class="author">      
                     <span class="dots">････････････････････</span>                
-                    <img src="{{ account.email|gravatar(50) }}" />
+                    <img src="{{ site.avatar }}" />
                     <span class="dots">････････････････････</span>                
                 </aside>
                 <div class="post-body">

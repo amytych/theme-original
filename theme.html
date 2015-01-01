@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if is_home %}{{ site.author }}{% elif is_post %}{{ post.title }}{% elif is_link %}{{ link.title }}{% elif is_page %}{{ page.title }}{% endif %} | {{ site.name }}</title>
     <meta name="author" content="{{ site.author }}" />
     <link rel="shortcut icon" href="https://dl.dropboxusercontent.com/u/64730059/veganama/favicon.ico">

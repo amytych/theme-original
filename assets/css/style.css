@@ -1,8 +1,12 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300);
-@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400|Shadows+Into+Light+Two);
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+strong, b {
+  font-weight: 400;
 }
 
 h1, h2, h3, h4 {

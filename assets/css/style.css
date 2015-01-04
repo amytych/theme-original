@@ -13,6 +13,10 @@ h1, h2, h3, h4 {
   font-family: 'Shadows Into Light Two', cursive;
 }
 
+p {
+  font-weight: 300;
+}
+
 .post-body img {
   padding: 10px;
   background-color: #fff;
